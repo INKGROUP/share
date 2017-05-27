@@ -2,6 +2,7 @@
 配置文件路径：/etc/nginx
 查看nginx.conf
 cat nginx.conf
+![](http://note.youdao.com/favicon.ico)
 ![image](http://note.youdao.com/favicon.ico)
 ![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard15.png)
 nginx日志文件，记录服务器访问日志
