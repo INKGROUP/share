@@ -17,8 +17,7 @@ rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0
 
 启动：service nginx start
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/
-clipboard1.png)
+![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard1.png)
 
 停止：service nginx stop
 
