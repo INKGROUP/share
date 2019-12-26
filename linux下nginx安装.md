@@ -17,15 +17,15 @@ rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0
 
 启动：service nginx start
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard1.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard1.png)
 
 停止：service nginx stop
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard2.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard2.png)
 
 重启：service nginx restart
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard3.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard3.png)
 
 每次执行命令后，如果都提示OK，那就一切安好了
 
@@ -34,7 +34,7 @@ rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0
 
 http://192.168.200.140 
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard4.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard4.png)
 
 什么情况？？？？？服务启动提示OK啊。。。。。。
 
@@ -42,15 +42,15 @@ http://192.168.200.140
 
 ps -ef|grep nginx
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard5.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard5.png)
 
 服务是正常启动了，没有启动是下面这个样子的：
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard6.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard6.png)
 
 而且服务没有启动情况下页面长下面这个样子：
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard7.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard7.png)
 
 所以可以排除服务启动出现问题
 
@@ -65,7 +65,7 @@ ps -ef|grep nginx
 
 service iptables status
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard8.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard8.png)
 
 显示not running，说明防火墙是关闭的
 
@@ -73,32 +73,32 @@ service iptables status
 
 /usr/sbin/sestatus -v
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard9.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard9.png)
 
 current mode 是什么？当前模式，并且还是强制，问题的根源就在这里。
 
 不知道selinux是什么不重要，重要的是我可以关闭你！
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard10.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard10.png)
 
 编辑文件，后保存
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard11.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard11.png)
 
 重启一下linux
 
 reboot
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard12.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard12.png)
 
 休息片刻，连接上linux，检查selinux
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard13.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard13.png)
 
 总算是关闭了！！！！扫清障碍，go！！
 
 启动nginx，访问服务
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard14.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard14.png)
 
 到这里，服务安装完毕，也可以正常运行了。

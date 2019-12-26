@@ -6,7 +6,7 @@
 
 cat nginx.conf
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard15.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard15.png)
 
 nginx日志文件，记录服务器访问日志
 
@@ -16,7 +16,7 @@ include /etc/nginx/conf.d/*.conf
 
 进入到配置文件路径下
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard16.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard16.png)
 
 默认情况下，有一个default.conf，
 
@@ -24,7 +24,7 @@ include /etc/nginx/conf.d/*.conf
 
 cat default.conf 
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard17.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard17.png)
 
 端口和域名：
 
@@ -47,15 +47,15 @@ index  index.html;
 
 来看看我们的测试服务器配置吧
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard18.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard18.png)
 
 h.conf：
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard19.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard19.png)
 
 image.conf
 
-![image](https://github.com/INKGROUP/share/blob/master/201705/images/clipboard20.png)
+![image](https://github.com/INKGROUP/share/blob/master/resources/201705/images/clipboard20.png)
 
 看到这里，你是不是顿悟了？
 
